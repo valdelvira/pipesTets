@@ -29,12 +29,13 @@ export class MenuComponent implements OnInit {
             label: 'Not commons',
             icon: 'pi pi-globe',
             routerLink: '/not-commons'
-          },
+          }
         ]
       },
       {
         label: 'Custom pipes',
         icon: 'pi pi-cog',
+        routerLink: '/order'
       },
     ];
 

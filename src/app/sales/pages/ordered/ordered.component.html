@@ -1,1 +1,15 @@
-<p>ordered works!</p>
+<div class="text-layout">
+    <h1>Custom Pipes</h1>
+    <p>{{'Custom Pipes' | uppercaseCustom:isUpper }}</p>
+</div>
+<p-toolbar>
+    <div class="p-toolbar-group-left">
+    </div>
+
+    <div class="p-toolbar-group-right">
+        <button pButton class="mr-1 p-button-warning" (clic)="changeStatus()" label="Toggle uppercase"></button>
+        <button pButton icon="pi pi-sort" class="mr-1" label="By name"></button>
+        <button pButton icon="pi pi-sort" class="mr-1 p-button-success" label="Values"></button>
+        <button pButton icon="pi pi-sort" class="mr-1 p-button-help" label="By color"></button>
+    </div>
+</p-toolbar>

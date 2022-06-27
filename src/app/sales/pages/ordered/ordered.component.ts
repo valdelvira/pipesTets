@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ordered',
@@ -6,11 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class OrderedComponent implements OnInit {
+export class OrderedComponent {
+  isUpper: boolean = true
 
-  constructor() { }
+  changeStatus() {
+    debugger
+    this.isUpper = !this.isUpper
 
-  ngOnInit(): void {
   }
+
 
 }

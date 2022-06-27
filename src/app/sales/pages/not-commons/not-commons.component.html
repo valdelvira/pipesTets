@@ -63,7 +63,7 @@
     <div class="col md-6">
         <p-fieldset legend="Async Pipe" [toggleable]="true">
 
-            <!-- {{counterObser | async}} -->
+            {{counterObser | async}}
             <pre *ngIf="!(valuePromise | async)">Resolviendo promesa</pre>
             <pre>{{ valuePromise | async }}</pre>
         </p-fieldset>
